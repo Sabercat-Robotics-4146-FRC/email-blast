@@ -1,0 +1,67 @@
+h1 {
+    font-family: 'Arvo', serif;
+    color: #ffe082;
+    padding: 3vh;
+}
+h3 {
+    padding: 1vh;
+}
+a {
+    text-decoration: none;
+    color: #dca102;
+}
+a:hover {
+    text-decoration: underline;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #232323ff;
+    color: white;
+}
+.container {
+  /* display: flex;
+  flex-direction: row; */
+}
+.item {
+    /* flex-grow: 1; */
+    display:inline-block;
+}
+.body-writer {
+    background-color: #232323ff;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    border-color: white;
+    border-style: solid;
+}
+.subject-input {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #232323ff;
+    border-color: white;
+    border-style: solid;
+}
+h4 {
+    color: #ffe082;
+    font-family: 'Arvo', serif;
+}
+.heading-form {
+    color: #ffe082;
+    font-family: 'Arvo', serif;
+    font-size: 20pt;
+    background-color: #232323ff;
+    border-color: white;
+    border-style: solid;
+}
+.password-input {
+    color: #ffe082;
+    background-color: #232323ff;
+    border-color: white;
+    border-style: solid;
+}
+.send-button {
+    color: #ffe082;
+    background-color: #232323ff;
+    border-color: white;
+    border-style: solid;
+}

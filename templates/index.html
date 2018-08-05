@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sabercat Robotics Email Blast</title>
+    <link rel="stylesheet" href="./static/styles.css">
 </head>
 <body>
-    This is the email blast website.
+    <h1>email-blast // Sabercats 4146</h1>
+    <h3>This is a prototype utility for our public relations branch.</h3>
+
+        {% if error %}
+            <h2 style="color:red; font-size:16pt;">{{ error }}</h2>
+        {% endif %}
+        {% if success %}
+            <h2 style="color:green; font-size:16pt;">{{ success }}</h2>
+        {% endif %}
+    <div class="container">
+        <form method="POST">
+            <div>
+                <h4>Subject</h4>
+                <input type="text" name="subject" id="subject" class="subject-input">
+            </div>
+            <div>
+                <h4>Main Heading</h4>
+                <input type="text" name="heading" id="heading" class="heading-form">
+            </div>
+            <div class="item">
+                <h4>Email Body</h4>
+                <p>This is an html body for the email.</p>
+                <textarea name="body" id="email-body" cols="30" rows="10" class="body-writer"></textarea>
+                
+            </div>
+            <div class="item">
+                <h4>Mailing List</h4>
+                <p>Seperate emails with a comma.</p>
+                <textarea name="emails" id="email-list" cols="30" rows="10" class="body-writer">gowan.rowland@gmail.com, sabercatrobotics@gmail.com</textarea>
+            </div>
+            <div>
+                <h4>Gmail Password</h4>
+                <p>Secure login.</p>
+                <input type="password" name="password" id="gmail-password" class="password-input">
+                <input type="submit" value="Send" class="send-button">
+            </div>
+        </form>
+        
+
+    </div>
 </body>
 </html>
