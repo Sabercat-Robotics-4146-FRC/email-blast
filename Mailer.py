@@ -7,7 +7,7 @@ def mass_email(subject, heading, body, password, mail_list):
     msg['Subject'] = subject
     msg['From'] = "sabercatrobotics@gmail.com"
 
-    html = open("test_template.html").read()
+    html = open("./test_template.html").read()
     html = html.replace("{{body}}", body)
     html = html.replace("{{heading}}", heading)
 
