@@ -1,1 +1,1 @@
-web: backend app:app
+web: app:app
